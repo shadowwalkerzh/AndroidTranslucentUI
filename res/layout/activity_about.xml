@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <com.keen.ma.customui.MyCircleImageView
+        android:id="@+id/user_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:alpha="0.6"
+        android:padding="5dp"
+        android:src="@drawable/dove"
+        app:border_color="@color/white"
+        app:border_width="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:text="@string/version_code"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/about_content"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittext_bg"
+        android:padding="10dp"
+        android:text="@string/system_profile"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_tiny" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/service_phone"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_small" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:text="@string/service_qq"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_small" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:text="@string/service_email"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_small" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:text="@string/copy_right"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_tiny" />
+
+</LinearLayout>

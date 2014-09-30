@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/get_focus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <EditText
+            android:id="@+id/search_et"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_bg"
+            android:drawableLeft="@drawable/search_icon"
+            android:drawablePadding="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:hint="@string/search_hint"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/text_size_small" />
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/gray_button_bg"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/light_green"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/light_blue_line" />
+
+            <Button
+                android:id="@+id/message_center_btn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_button_bg"
+                android:drawableTop="@drawable/message_center_icon"
+                android:paddingTop="20dp"
+                android:text="@string/message_center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_middle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/light_blue_line" />
+
+            <Button
+                android:id="@+id/map_center_btn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_button_bg"
+                android:drawableTop="@drawable/map_center_icon"
+                android:paddingTop="20dp"
+                android:text="@string/map_center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_middle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/light_blue_line" />
+
+            <Button
+                android:id="@+id/magic_pic_center_btn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_button_bg"
+                android:drawableTop="@drawable/magic_pic_icon"
+                android:paddingTop="20dp"
+                android:text="@string/magic_pic_center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_middle" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_line_bg" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/light_blue_line" />
+
+            <Button
+                android:id="@+id/friends_center_btn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_button_bg"
+                android:drawableTop="@drawable/friend_center_icon"
+                android:paddingTop="20dp"
+                android:text="@string/friends_center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_middle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/light_blue_line" />
+
+            <Button
+                android:id="@+id/share_center_btn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_button_bg"
+                android:drawableTop="@drawable/share_center_icon"
+                android:paddingTop="20dp"
+                android:text="@string/share_center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_middle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/light_blue_line" />
+
+            <Button
+                android:id="@+id/setting_center_btn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_button_bg"
+                android:drawableTop="@drawable/setting_center_icon"
+                android:paddingTop="20dp"
+                android:text="@string/setting_center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_middle" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

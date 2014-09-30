@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="main_bg_color">#375A70</color>
+    <color name="main_bg_light_color">#D0004355</color>
+    <color name="black">#00000000</color>
+    <color name="dark_black">#2D2D2D</color>
+    <color name="light_gray">#79A6A9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_trans">#AAFFFFFF</color>
+    <color name="gray_bg">#317481</color>
+    <color name="red_btn_bg">#FF3648</color>
+    <color name="red_btn_light_bg">#A0FF0000</color>
+    <color name="blue">#0000FF</color>
+    <color name="light_blue">#AA0000FF</color>
+    <color name="gray_line_bg">#CCCCCC</color>
+    <color name="popup_gray_bg">#58CCCCCC</color>
+    <color name="selected_color">#B80000</color>
+    <color name="viewpager_bg_color">#58F0F0F0</color>
+    <color name="light_green">#21A909</color>
+    <color name="trans_light_green">#5821A909</color>
+    <color name="trans_light_red">#58FF3648</color>
+    <color name="alert_view_color">#EBEBEB</color>
+    <color name="alert_text_color">#258BFC</color>
+	<color name="head_bg_color">#1A344B</color>
+    <color name="light_orange">#E55300</color>
+	<color name="gray_button_bg">#A0F0F0F0</color>
+	<color name="light_blue_line">#77B3D4</color>
+</resources>

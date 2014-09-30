@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="20dp" >
+
+        <TextView
+            android:id="@+id/base_setting"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/base_setting"
+            android:textColor="@color/light_orange"
+            android:textSize="@dimen/text_size_small" />
+
+        <View
+            android:id="@+id/base_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/base_setting"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/light_orange" />
+
+        <LinearLayout
+            android:id="@+id/base_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/base_line"
+            android:background="@drawable/setting_textview_bg"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/profile_center_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/textview_topcorner_blue_bg"
+                android:drawableLeft="@drawable/profile_center"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/right_arrow"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/profile_center"
+                android:textColor="@color/dark_black"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="#ACAEAD" />
+
+            <TextView
+                android:id="@+id/state_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/textview_blue_bg"
+                android:drawableLeft="@drawable/state"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/right_arrow"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/state"
+                android:textColor="@color/dark_black"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="#ACAEAD" />
+
+            <TextView
+                android:id="@+id/change_under_pic_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/textview_bottom_corner_blue_bg"
+                android:drawableLeft="@drawable/change_under_pic"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/right_arrow"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/change_under_image"
+                android:textColor="@color/dark_black"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/extral_funcs"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/base_layout"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/extral_funcs"
+            android:textColor="@color/light_orange"
+            android:textSize="@dimen/text_size_small" />
+
+        <View
+            android:id="@+id/funcs_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/extral_funcs"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/light_orange" />
+
+        <LinearLayout
+            android:id="@+id/funcs_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/funcs_line"
+            android:background="@drawable/setting_textview_bg"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/magic_picture_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/textview_topcorner_blue_bg"
+                android:drawableLeft="@drawable/magic_pic"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/right_arrow"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/magic_picture"
+                android:textColor="@color/dark_black"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="#ACAEAD" />
+
+            <TextView
+                android:id="@+id/clear_cache_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/textview_bottom_corner_blue_bg"
+                android:drawableLeft="@drawable/clear_cache"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/right_arrow"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/clear_cache"
+                android:textColor="@color/dark_black"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/system_info"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/funcs_layout"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/system_info"
+            android:textColor="@color/light_orange"
+            android:textSize="@dimen/text_size_small" />
+
+        <View
+            android:id="@+id/system_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/system_info"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/light_orange" />
+
+        <LinearLayout
+            android:id="@+id/system_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/system_line"
+            android:background="@drawable/setting_textview_bg"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/check_update_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/textview_topcorner_blue_bg"
+                android:drawableLeft="@drawable/check_update"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/right_arrow"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/check_update"
+                android:textColor="@color/dark_black"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="#ACAEAD" />
+
+            <TextView
+                android:id="@+id/feedback_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/textview_blue_bg"
+                android:drawableLeft="@drawable/feedback_center"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/right_arrow"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/feedback"
+                android:textColor="@color/dark_black"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="#ACAEAD" />
+
+            <TextView
+                android:id="@+id/about_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/textview_bottom_corner_blue_bg"
+                android:drawableLeft="@drawable/about"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/right_arrow"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/about"
+                android:textColor="@color/dark_black"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/exit_button"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/system_layout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_button_bg"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:text="@string/logout"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</ScrollView>

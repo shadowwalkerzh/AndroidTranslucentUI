@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:background="@drawable/photo_choice_popup_bg"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/choose_local_image"
+        style="@style/PhotoChoiceBtnStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/local_image" />
+
+    <Button
+        android:id="@+id/choose_camera_image"
+        style="@style/PhotoChoiceBtnStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/camera_image" />
+
+    <Button
+        android:id="@+id/choose_cancel"
+        style="@style/PhotoChoiceBtnStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/cancel" />
+
+</LinearLayout>

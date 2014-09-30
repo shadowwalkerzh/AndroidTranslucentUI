@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 菜单项名称数组 -->
+    <string-array name="menu_item_array">
+        <item>首页中心</item>
+        <item>消息中心</item>
+        <item>好友中心</item>
+        <item>地图中心</item>
+        <item>设置中心</item>
+    </string-array>
+
+    <!-- 菜单项名称数组 -->
+    <string-array name="menu_icon_array">
+        <item>home_icon</item>
+        <item>message_icon</item>
+        <item>contact_icon</item>
+        <item>map_icon</item>
+        <item>setting_icon</item>
+    </string-array>
+
+    <!-- 菜单项对应的fragment数组 -->
+    <string-array name="menu_fragment_array">
+        <item>HomeCenterFragment</item>
+        <item>MessageCenterFragment</item>
+        <item>FriendsCenterFragment</item>
+        <item>MapCenterFragment</item>
+        <item>SettingCenterFragment</item>
+    </string-array>
+
+</resources>

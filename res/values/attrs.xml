@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="viewPageIndicatorStyle" format="reference" />
+    </declare-styleable>
+
+    <attr name="selectedColor" format="color" />
+
+    <declare-styleable name="viewPager_indicator">
+        <attr name="selectedColor" />
+        <attr name="android:background" />
+    </declare-styleable>
+
+</resources>

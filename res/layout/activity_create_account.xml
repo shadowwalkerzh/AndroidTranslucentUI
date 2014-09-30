@@ -1,0 +1,105 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/activity_main_bg" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:drawableLeft="@drawable/back_tag_bg"
+                android:gravity="center"
+                android:text="@string/create_account_tag"
+                android:textColor="@drawable/back_text_color"
+                android:textSize="@dimen/text_size_middle" />
+
+            <com.keen.ma.customui.MyCircleImageView
+                android:id="@+id/tips_info"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:alpha="0.8"
+                android:src="@drawable/info_icon"
+                app:border_color="#FFFFFF"
+                app:border_width="1dp" />
+
+            <com.keen.ma.customui.MyCircleImageView
+                android:id="@+id/user_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:alpha="0.6"
+                android:padding="5dp"
+                android:src="@drawable/profile"
+                app:border_color="#FFFFFF"
+                app:border_width="2dp" />
+
+            <EditText
+                android:id="@+id/account_et"
+                style="@style/UserAccountEt"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/user_image"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/account_icon"
+                android:hint="@string/new_account_nick_name"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/password_et"
+                style="@style/UserPwdEt"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/account_et"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/password_icon"
+                android:hint="@string/new_account_password" />
+
+            <EditText
+                android:id="@+id/email_et"
+                style="@style/UserAccountEt"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/password_et"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/email_icon"
+                android:hint="@string/new_account_email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/phone_et"
+                style="@style/UserAccountEt"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/email_et"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/phone_icon"
+                android:hint="@string/new_account_phone"
+                android:inputType="phone" />
+
+            <Button
+                android:id="@+id/create_account_btn"
+                style="@style/LoginBtnStyle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/phone_et"
+                android:layout_marginTop="30dp"
+                android:text="@string/create_account" />
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

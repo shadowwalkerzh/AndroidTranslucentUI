@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.keen.ma"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:name="com.keen.ma.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.aviary.android.feather.v1.API_KEY"
+            android:value="e87969babcc74d24" />
+
+        <activity
+            android:name="com.keen.ma.activity.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.CreateAccountActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.ForgetPwdActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTitleBar" />
+        <activity
+            android:name=".activity.AboutSystemActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FeedbackActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MagicPicActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChangeWallPaperActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- AviarySDK相关 -->
+        <activity
+            android:name="com.aviary.android.feather.FeatherActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:largeHeap="true"
+            android:process=":aviarysdk"
+            android:screenOrientation="unspecified"
+            android:theme="@style/AviaryTheme" />
+
+        <!-- Alert -->
+        <activity
+            android:name="com.aviary.android.feather.AlertActivity"
+            android:launchMode="standard"
+            android:noHistory="true"
+            android:theme="@style/AviaryTheme.Dialog" >
+            <intent-filter>
+                <action android:name="aviary.intent.action.ALERT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- CDS Content Service -->
+        <service
+            android:name="com.aviary.android.feather.cds.AviaryCdsService"
+            android:exported="false"
+            android:process=":aviarycds" >
+            <intent-filter>
+                <action android:name="aviary.intent.action.CDS_DOWNLOAD_START" />
+                <action android:name="aviary.intent.action.CDS_RESTORE_USER_ITEMS" />
+            </intent-filter>
+        </service>
+        <!--
+        Cds Content Provider, 
+     NOTE that the "authorities" value MUST be formatted in this way:
+        android:authorities="{your.packagename}.AviaryCdsProvider"
+        -->
+        <provider
+            android:name="com.aviary.android.feather.cds.AviaryCdsProvider"
+            android:authorities="com.keen.ma.AviaryCdsProvider"
+            android:exported="false"
+            android:process=":aviarycds"
+            android:syncable="true" />
+        <!-- CDS Download Receiver -->
+        <receiver
+            android:name="com.aviary.android.feather.cds.AviaryCdsReceiver"
+            android:process=":aviarycds" >
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 测试 -->
+        <uses-library android:name="android.test.runner" />
+    </application>
+
+    <!-- 测试 -->
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.keen.ma" />
+
+    <!-- 添加对屏幕的支持 -->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <!-- 添加权限设置 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+</manifest>

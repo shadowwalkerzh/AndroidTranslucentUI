@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 测试数据 -->
+    <string name="test_user_name">Shadow Walker</string>
+    <string name="test_user_intro">如果你是我眼中的一滴泪，那我永远都不会哭</string>
+    <string name="system_profile">本系统是基于地图和基于列表双模式的聊天应用，可以进行文字、语音聊天，可以传输文本文件。聊天过程中可以随时定位好友，查看附近，分享内容等等，应用采用透明扁平风格，简单简洁大方。</string>
+    <string name="app_name">KeenW</string>
+    <string name="action_settings">Settings</string>
+    <string name="user_account">手机号/邮箱</string>
+    <string name="user_password">8位以上密码</string>
+    <string name="login">我要登录</string>
+    <string name="foget_pwd">忘记密码？</string>
+    <string name="profile_image">我的头像</string>
+    <string name="local_image">本地图片</string>
+    <string name="camera_image">相机拍照</string>
+    <string name="cancel">取消</string>
+
+    <!-- 注册页面 -->
+    <string name="create_account">我要创建</string>
+    <string name="create_account_tag">创建用户</string>
+    <string name="new_account_nick_name">新用户昵称</string>
+    <string name="new_account_password">新用户密码</string>
+    <string name="new_account_email">新用户邮箱</string>
+    <string name="new_account_phone">新用户手机</string>
+    <string name="tip_title">温馨提示</string>
+    <string name="is_known">我知道了</string>
+    <string name="tip_contents">亲，请您务必要认真正确地填写手机号和邮箱，并且同一手机号和邮箱只能注册一次，这两个是找回密码的仅有凭证哦。</string>
+    <!-- 密码找回页面 -->
+    <string name="find_password">密码找回</string>
+    <string name="find_by_phone">手机号找回</string>
+    <string name="find_by_email">邮箱找回</string>
+    <string name="phone_number">手机号</string>
+    <string name="email_address">邮箱</string>
+    <string name="find_pwd">找回密码</string>
+    <string name="code">验证码</string>
+    <string name="get_code">获取</string>
+
+    <!-- 主页面 -->
+    <string name="home">首页中心</string>
+    <string name="exit">退出</string>
+    <string name="search">搜索</string>
+    <string name="search_hint">好友昵称/手机号...</string>
+
+    <!-- 设置中心 -->
+    <string name="profile_center">个人中心</string>
+    <string name="state">状态设置</string>
+    <string name="change_under_image">更换底图</string>
+    <string name="magic_picture">魔幻照片</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="check_update">检查更新</string>
+    <string name="feedback">反馈中心</string>
+    <string name="about">关于我们</string>
+    <string name="logout">注销登录</string>
+    <string name="base_setting">基本设置</string>
+    <string name="extral_funcs">特色功能</string>
+    <string name="system_info">系统相关</string>
+
+    <!-- 关于我们 -->
+    <string name="version_code">World In Hands V1.0</string>
+    <string name="service_phone">客服电话:0510-37373377</string>
+    <string name="service_qq">客服QQ:1010217790</string>
+    <string name="service_email">客服邮箱:peerlesszh@163.com</string>
+    <string name="copy_right">北海鼎盛科技有限公司版权所有Copyright©2010- 2014 WIH.all Right Reserved</string>
+
+    <!-- 反馈中心 -->
+    <string name="feedback_hint">请输入反馈信息...</string>
+	<string name="feedback_submit">提交反馈</string>
+	
+	<!-- 主页选项 -->
+	<string name="message_center">消息中心</string>
+	<string name="friends_center">好友中心</string>
+	<string name="map_center">地图中心</string>
+	<string name="share_center">分享中心</string>
+	<string name="magic_pic_center">魔幻照片</string>
+	<string name="setting_center">设置中心</string>
+	<!-- 魔幻照片页面 -->
+	<string name="magic_tips">说明:点击三个单选框选择要编辑的图片后，点击右上角的编辑按钮即可进入图片魔幻编辑主页面了，赶紧试试吧！！</string>
+</resources>

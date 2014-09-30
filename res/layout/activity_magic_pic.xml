@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <RadioGroup
+        android:id="@+id/select_pic_radio"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <RadioButton
+            android:id="@+id/select_profile"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/radio_button_leftcorner_bg"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/profile_image" />
+
+        <RadioButton
+            android:id="@+id/select_local_image"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/radio_button_nocorner_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/local_image" />
+
+        <RadioButton
+            android:id="@+id/select_camera_image"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/radio_button_rightcorner_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/camera_image" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/show_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/default_bg" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/dot_border_bg"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_tiny"
+        android:text="@string/magic_tips" />
+
+</LinearLayout>

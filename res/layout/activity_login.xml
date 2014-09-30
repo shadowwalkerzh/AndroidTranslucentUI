@@ -1,0 +1,82 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/activity_main_bg" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp" >
+
+            <com.keen.ma.customui.MyCircleImageView
+                android:id="@+id/create_account"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:alpha="0.8"
+                android:src="@drawable/add"
+                app:border_color="#FFFFFF"
+                app:border_width="1dp" />
+
+            <com.keen.ma.customui.MyCircleImageView
+                android:id="@+id/user_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/create_account"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:alpha="0.6"
+                android:padding="5dp"
+                android:src="@drawable/dove"
+                app:border_color="#FFFFFF"
+                app:border_width="2dp" />
+
+            <EditText
+                android:id="@+id/account_et"
+                style="@style/UserAccountEt"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/user_image"
+                android:layout_marginTop="30dp"
+                android:drawableLeft="@drawable/account_icon" />
+
+            <EditText
+                android:id="@+id/password_et"
+                style="@style/UserPwdEt"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/account_et"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/password_icon" />
+
+            <Button
+                android:id="@+id/login_btn"
+                style="@style/LoginBtnStyle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/password_et"
+                android:layout_marginTop="30dp" />
+
+            <TextView
+                android:id="@+id/forget_pwd_tv"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/login_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:drawableBottom="@drawable/line"
+                android:gravity="center"
+                android:text="@string/foget_pwd"
+                android:textColor="@drawable/forget_pwd_text_bg"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>
