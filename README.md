@@ -8,7 +8,7 @@ AndroidTranslucentUI
 ![Image3](http://raw.github.com/peerlesszh/AndroidTranslucentUI/master/pic4.png)![Image4](http://raw.github.com/peerlesszh/AndroidTranslucentUI/master/pic5.png)
 
 
-代码运行步骤：
-1、将KeenW文件夹中的Aviary-SDK.zip压缩包解压后单独导入eclipse中。
-2、将KeenW工程导入eclipse中，即可运行KeenW工程。（前提是你的eclipse环境满足使用Aviary-SDK的条件）
+代码运行步骤：\n
+1、将KeenW文件夹中的Aviary-SDK.zip压缩包解压后单独导入eclipse中。\n
+2、将KeenW工程导入eclipse中，即可运行KeenW工程。（前提是你的eclipse环境满足使用Aviary-SDK的条件）\n
 3、登录账号是常用的手机号数字，18**，13**,15**等。密码满足8位以上就可以。
